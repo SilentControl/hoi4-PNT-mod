@@ -716,7 +716,7 @@ ideas = {
 				original_tag = ROM
 			}
 			
-			traits = { democratic_reformer }
+			traits = { agrarianist_reformer }
 		}
 
 		ROM_gheorghe_gheorghiu_dej = {
