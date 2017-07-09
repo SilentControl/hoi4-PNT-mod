@@ -719,6 +719,17 @@ ideas = {
 			traits = { agrarianist_reformer }
 		}
 
+		ROM_dinu_bratianu = {
+
+			picture = dinu_bratianu
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			traits = { democratic_reformer }
+		}		
+
 		ROM_gheorghe_gheorghiu_dej = {
 
 			picture = generic_communist_europe

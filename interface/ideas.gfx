@@ -13,6 +13,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_corneliu_coposu.tga"
 	}
 
+	spriteType = {
+		name = "GFX_idea_dinu_bratianu"
+		texturefile = "gfx/interface/ideas/idea_dinu_bratianu.dds"
+	}
+
 	### new tfv nat spirit icons
 
 	spriteType = {
