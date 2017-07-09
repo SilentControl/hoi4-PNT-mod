@@ -719,6 +719,17 @@ ideas = {
 			traits = { agrarianist_reformer }
 		}
 
+		ROM_virgil_madgearu = {
+
+			picture = virgil_madgearu
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			traits = { brilliant_economist }
+		}
+
 		ROM_dinu_bratianu = {
 
 			picture = dinu_bratianu

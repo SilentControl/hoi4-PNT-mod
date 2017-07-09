@@ -246,6 +246,15 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	brilliant_economist = {
+		random = no
+		consumer_goods_factor = -0.3
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	
 	### IDEA TRAITS ###
 	
