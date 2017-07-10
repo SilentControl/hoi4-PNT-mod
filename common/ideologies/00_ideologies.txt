@@ -34,7 +34,7 @@ ideologies = {
 		}
 		
 		faction_modifiers = {
-			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+			faction_trade_opinion_factor = 0.70 #plus 50% trade opinion
 		}
 		ai_democratic = yes # uses the democratic AI behaviour	
 	}
