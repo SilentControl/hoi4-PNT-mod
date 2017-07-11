@@ -35,7 +35,8 @@ country_event = {
 			} 
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		OR = { has_government = democratic
+			   has_government = agrarianism }
 		NOT = {
 			OR = {
 				has_war = yes
@@ -89,7 +90,8 @@ country_event = {
 			} 
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		OR = { has_government = democratic
+			   has_government = agrarianism }
 		has_war = no
 		OR = {
 			any_neighbor_country = {
@@ -163,7 +165,8 @@ country_event = {
 			} 
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		OR = { has_government = democratic
+			   has_government = agrarianism }
 		NOT = { has_idea = fascism_defeated }
 		fascism > 0.15
 	}
@@ -223,7 +226,8 @@ country_event = {
 			} 
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		OR = { has_government = democratic
+			   has_government = agrarianism }
 		NOT = { has_idea = communism_defeated }
 		communism > 0.15
 	}
@@ -305,10 +309,12 @@ country_event = {
 			} 
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		OR = { has_government = democratic
+			   has_government = agrarianism }
 		democratic < 0.5
 		fascism < 0.5
 		communism < 0.5
+		agrarianism < 0.5
 	}
 	
 	option = {
@@ -379,7 +385,8 @@ country_event = {
 			} 
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		OR = { has_government = democratic
+			   has_government = agrarianism }
 		has_country_flag = coalition_with_fascists
 		any_other_country = {
 			has_government = fascism
@@ -452,7 +459,8 @@ country_event = {
 			} 
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		OR = { has_government = democratic
+			   has_government = agrarianism }
 		has_country_flag = coalition_with_communists
 		any_other_country = {
 			has_government = communism
@@ -517,7 +525,8 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
+		OR = { has_government = democratic
+			   has_government = agrarianism }
 		fascism > 0.5
 		is_puppet = no
 	}
@@ -556,7 +565,8 @@ country_event = {
 
 	trigger = {
 
-		has_government = democratic
+		OR = { has_government = democratic
+			   has_government = agrarianism }
 		communism > 0.5
 		is_puppet = no
 	}
@@ -600,7 +610,8 @@ country_event = {
 				date < 1.1.1949
 			}
 		}
-		has_government = democratic
+		OR = { has_government = democratic
+			   has_government = agrarianism }
 		has_idea_with_trait = motorized_equipment_manufacturer
 	}
 	
@@ -653,7 +664,8 @@ country_event = {
 			} 
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		OR = { has_government = democratic
+			   has_government = agrarianism }
 		has_war = yes
 	}
 	
@@ -712,7 +724,8 @@ country_event = {
 			} 
 		}
 		OR = { NOT = { tag = SPR } NOT = { date < 1937.1.1 } }
-		has_government = democratic
+		OR = { has_government = democratic
+			   has_government = agrarianism }
 		has_war = yes
 		any_war_score < 20
 	}
@@ -819,7 +832,8 @@ country_event = {
 	
 	is_triggered_only = yes
 	trigger = {
-		has_government = democratic
+		OR = { has_government = democratic
+			   has_government = agrarianism }
 		agrarianism > 0.5
 		is_puppet = no
 	}	
