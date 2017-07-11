@@ -823,7 +823,7 @@ country_event = {
 	}
 }
 
-# Agrarianism Majority
+# Agrarianist Majority
 country_event = {
 	id = election.100
 	title = election.100.t
@@ -860,3 +860,5 @@ country_event = {
 		}
 	}	
 }
+
+# Agrarianists on the Rise
