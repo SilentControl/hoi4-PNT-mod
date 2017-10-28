@@ -4604,4 +4604,715 @@ focus_tree = {
 			}
 		}
 	}
+
+	####################
+	###Taranist Focus###
+	####################
+	focus = {
+		id = ROM_taranists_help_the_country
+		icon = GFX_goal_generic_dangerous_deal
+		#prerequisite = { focus = ROM_preserve_greater_romania }
+		x = 60
+		y = 0
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#available = {
+		#	NOT = { has_war_with = SOV }
+		#	SOV = {
+		#		exists = yes
+		#		is_puppet = no
+		#	}
+		#}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = agrarianism popularity = 0.1 }
+			#add_opinion_modifier = { target = SOV modifier = ROM_a_deal_with_the_devil }
+			#SOV = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
+		}
+	}
+
+	focus = {
+		id = ROM_taranists_open_doors_politics
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ROM_taranists_help_the_country }
+		x = 55
+		y = 1
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#available = {
+		#	NOT = { has_war_with = SOV }
+		#	SOV = {
+		#		exists = yes
+		#		is_puppet = no
+		#	}
+		#}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = taranist_deals
+			#research_time_factor = -0.02
+			#trade_opinion_factor = 0.2
+			#add_popularity = { ideology = agrarianism popularity = 0.1 }
+			#add_opinion_modifier = { target = SOV modifier = ROM_a_deal_with_the_devil }
+			#SOV = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
+		}
+	}	
+
+	focus = {
+		id = ROM_taranists_preserve_country_values
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ROM_taranists_help_the_country }
+		x = 65
+		y = 1
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#available = {
+		#	NOT = { has_war_with = SOV }
+		#	SOV = {
+		#		exists = yes
+		#		is_puppet = no
+		#	}
+		#}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_national_unity = 0.1
+			#research_time_factor = -0.02
+			#trade_opinion_factor = 0.2
+			#add_popularity = { ideology = agrarianism popularity = 0.1 }
+			#add_opinion_modifier = { target = SOV modifier = ROM_a_deal_with_the_devil }
+			#SOV = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
+		}
+	}
+
+	focus = {
+		id = ROM_efficient_construction
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = ROM_taranists_open_doors_politics }
+		x = 53
+		y = 2
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			has_government = agrarianism
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = taranist_construct_efficient
+		}
+	}
+
+	focus = {
+		id = ROM_oil_extraction_efficiency
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ROM_taranists_open_doors_politics }
+		x = 57
+		y = 2
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 46 }
+				add_resource = {
+					type = oil
+					amount = 10
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_likes_foreign_capital
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = ROM_efficient_construction }
+		x = 51
+		y = 3
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			has_government = agrarianism
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV } 
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_likes_foreign_capital_2
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = ROM_likes_foreign_capital }
+		x = 52
+		y = 4
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			has_government = agrarianism
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV } 
+					free_building_slots = {
+						building = industrial_complex
+						size > 3
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_bucharest_main_railway_station
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ROM_likes_foreign_capital }
+		x = 50
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_tooltip = {
+			random_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 46 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_steel_industry
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ROM_oil_extraction_efficiency }
+		x = 56
+		y = 3
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 79 }
+				add_resource = {
+					type = steel
+					amount = 23
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_bauxite_extraction_efficiency
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ROM_oil_extraction_efficiency }
+		x = 58
+		y = 3
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 82 }
+				add_resource = {
+					type = aluminium
+					amount = 25
+				}
+			}
+		}
+	}		
+
+	focus = {
+		id = ROM_taranists_use_the_power
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ROM_taranists_preserve_country_values }
+		x = 63
+		y = 2
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#available = {
+		#	NOT = { has_war_with = SOV }
+		#	SOV = {
+		#		exists = yes
+		#		is_puppet = no
+		#	}
+		#}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 150
+			#research_time_factor = -0.02
+			#trade_opinion_factor = 0.2
+			#add_popularity = { ideology = agrarianism popularity = 0.1 }
+			#add_opinion_modifier = { target = SOV modifier = ROM_a_deal_with_the_devil }
+			#SOV = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
+		}
+	}
+
+	focus = {
+		id = ROM_blooming_agriculture
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = ROM_taranists_use_the_power }
+		x = 64
+		y = 3
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			has_government = agrarianism
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = taranist_fill_the_plates
+		}
+	}
+
+	focus = {
+		id = ROM_university_reform_law
+		icon = GFX_focus_research
+		prerequisite = { focus = ROM_taranists_use_the_power }
+		x = 62
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#num_of_factories > 50
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}	
+
+	focus = {
+		id = ROM_taranists_refuse_the_power
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ROM_taranists_preserve_country_values }
+		x = 68
+		y = 2
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		#available = {
+		#	NOT = { has_war_with = SOV }
+		#	SOV = {
+		#		exists = yes
+		#		is_puppet = no
+		#	}
+		#}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_national_unity = -0.15
+
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+
+			add_popularity = { ideology = fascism popularity = 0.3 }
+		}
+	}
+
+	focus = {
+		id = ROM_together_we_can_win
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ROM_taranists_refuse_the_power }
+		x = 68
+		y = 3
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			democratic > 0.25
+			agrarianism > 0.25
+		#	NOT = { has_war_with = SOV }
+		#	SOV = {
+		#		exists = yes
+		#		is_puppet = no
+		#	}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_national_unity = 0.3
+			kill_country_leader = yes
+			set_politics = {
+				ruling_party = agrarianism
+				elections_allowed = yes
+			}
+
+			add_popularity = { ideology = fascism popularity = -0.3 }
+		}
+	}
+
+	focus = {
+		id = ROM_communists_fraud_the_elections
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ROM_together_we_can_win }
+		x = 68
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			agrarianism > 0.5
+		}
+
+		completion_reward = {
+			kill_country_leader = yes
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+
+			add_popularity = { ideology = communism popularity = 1.0 }
+		}
+	}
+
+	focus = {
+		id = ROM_blooming_population
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ROM_blooming_agriculture }
+		x = 64
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_government = agrarianism
+		}
+
+		completion_reward = {
+		# conscription 18%
+		}
+	}
+
+		focus = {
+		id = ROM_rosia_montana_site
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ROM_bauxite_extraction_efficiency }
+		x = 58
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_government = agrarianism
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 76 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV } 
+					free_building_slots = {
+						building = industrial_complex
+						size > 3
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Draws closer to GB / FR
+	#Corneliu Coposu instead of Maniu
 }

@@ -1,0 +1,56 @@
+ideas = {	
+	hidden_ideas = {
+		taranist_deals = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = agrarianism
+			}
+
+			#picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				trade_opinion_factor = 0.3
+				#conscription = 0.5
+			}
+		}
+
+		taranist_fill_the_plates = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = agrarianism
+			}
+
+			#picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				consumer_goods_factor = -0.3
+				#conscription = 0.5
+			}
+		}
+
+		taranist_construct_efficient = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = agrarianism
+			}
+
+			#picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				production_speed_buildings_factor = 0.3
+				#conscription = 0.5
+			}		
+		}	
+	}
+}
