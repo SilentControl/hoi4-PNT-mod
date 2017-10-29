@@ -223,6 +223,17 @@ set_politics = {
 }
 
 create_country_leader = {
+	name = "Corneliu Coposu"
+	desc = "POLITICS_IULIU_MANIU_DESC"
+	picture = "gfx/leaders/ROM/Portrait_Romania_Corneliu_Coposu.tga"
+	expire = "1965.1.1"
+	ideology = taranism
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
 	name = "Iuliu Maniu"
 	desc = "POLITICS_IULIU_MANIU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Romania_Iuliu_Maniu.tga"
@@ -235,17 +246,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Corneliu Coposu"
-	desc = "POLITICS_IULIU_MANIU_DESC"
-	picture = "gfx/leaders/ROM/Portrait_Romania_Corneliu_Coposu.tga"
-	expire = "1965.1.1"
-	ideology = taranism
-	traits = {
-		cornered_fox
-	}
-}
-
-create_country_leader = {
 	name = "Gheorghe Tatarescu"
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Romania_Gheorghe_Tatarescu.dds"
@@ -253,6 +253,17 @@ create_country_leader = {
 	ideology = centrism
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Petru Groza"
+	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
+	picture = "gfx/leaders/ROM/Portrait_Romania_Petru_Groza.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		stalins_puppet
 	}
 }
 
