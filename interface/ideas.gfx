@@ -21,6 +21,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_virgil_madgearu"
 		texturefile = "gfx/interface/ideas/idea_virgil_madgearu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ion_mihalache"
+		texturefile = "gfx/interface/ideas/idea_ion_mihalache.dds"
 	}	
 
 	### new tfv nat spirit icons

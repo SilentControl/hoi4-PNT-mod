@@ -800,6 +800,17 @@ ideas = {
 			}
 		}
 
+		ROM_ion_mihalache = {
+
+			picture = ion_mihalache
+				
+			allowed = {
+				original_tag = ROM
+			}
+			
+			traits = { captain_of_industry army_chief_morale_1 }
+		}		
+
 		ROM_mihail_sturdza = {
 
 			picture = generic_fascist_demagogue_eastern_european_2d

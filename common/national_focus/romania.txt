@@ -5328,7 +5328,4 @@ focus_tree = {
 			}
 		}
 	}
-
-	#Draws closer to GB / FR
-	#Corneliu Coposu instead of Maniu
 }
