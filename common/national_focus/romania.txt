@@ -5197,11 +5197,11 @@ focus_tree = {
 		available = {
 			democratic > 0.25
 			agrarianism > 0.25
-		#	NOT = { has_war_with = SOV }
-		#	SOV = {
-		#		exists = yes
-		#		is_puppet = no
-		#	}
+			has_war_with = SOV
+			SOV = {
+				exists = yes
+				is_puppet = no
+			}
 		}
 
 		bypass = {
@@ -5225,6 +5225,10 @@ focus_tree = {
 			}
 
 			add_popularity = { ideology = fascism popularity = -0.3 }
+			add_popularity = { ideology = communism popularity = 0.6}
+			white_peace = SOV
+			SOV = { transfer_state = 78 }
+			SOV = { transfer_state = 80 }
 		}
 	}
 
@@ -5252,14 +5256,26 @@ focus_tree = {
 			}
 
 			add_popularity = { ideology = communism popularity = 1.0 }
+
+			create_country_leader = {
+				name = "Petru Groza"
+				desc = "POLITICS_CONSTANTIN_PARHON_DESC"
+				picture = "gfx/leaders/ROM/Portrait_Romania_Petru_Groza.tga"
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = {
+					stalins_puppet
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ROM_blooming_population
 		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ROM_university_reform_law }
 		prerequisite = { focus = ROM_blooming_agriculture }
-		x = 64
+		x = 63
 		y = 4
 		cost = 10
 
@@ -5272,7 +5288,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		# conscription 18%
+			add_ideas = ROM_developed_population
 		}
 	}
 
