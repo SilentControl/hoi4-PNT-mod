@@ -4725,7 +4725,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_national_unity = 0.1
+			add_national_unity = 0.2
 			#research_time_factor = -0.02
 			#trade_opinion_factor = 0.2
 			#add_popularity = { ideology = agrarianism popularity = 0.1 }
