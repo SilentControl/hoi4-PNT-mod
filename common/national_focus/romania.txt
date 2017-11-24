@@ -4610,12 +4610,12 @@ focus_tree = {
 	####################
 	focus = {
 		id = ROM_taranists_help_the_country
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_goal_tripartite_pact
 		#prerequisite = { focus = ROM_preserve_greater_romania }
 		x = 57
 		y = 0
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -4650,12 +4650,12 @@ focus_tree = {
 
 	focus = {
 		id = ROM_taranists_open_doors_politics
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = ROM_taranists_help_the_country }
 		x = 53
 		y = 1
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -4693,12 +4693,12 @@ focus_tree = {
 
 	focus = {
 		id = ROM_taranists_preserve_country_values
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = { focus = ROM_taranists_help_the_country }
 		x = 61
 		y = 1
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -4736,12 +4736,12 @@ focus_tree = {
 
 	focus = {
 		id = ROM_efficient_construction
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = ROM_taranists_open_doors_politics }
 		x = 52
 		y = 2
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -4770,12 +4770,12 @@ focus_tree = {
 
 	focus = {
 		id = ROM_oil_extraction_efficiency
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ROM_taranists_open_doors_politics }
 		x = 54
 		y = 2
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -4814,7 +4814,7 @@ focus_tree = {
 		x = 51
 		y = 3
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -4863,7 +4863,7 @@ focus_tree = {
 		x = 52
 		y = 4
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -4949,12 +4949,12 @@ focus_tree = {
 
 	focus = {
 		id = ROM_steel_industry
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = ROM_oil_extraction_efficiency }
 		x = 53
 		y = 3
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -4988,12 +4988,12 @@ focus_tree = {
 
 	focus = {
 		id = ROM_bauxite_extraction_efficiency
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = ROM_oil_extraction_efficiency }
 		x = 55
 		y = 3
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -5027,12 +5027,12 @@ focus_tree = {
 
 	focus = {
 		id = ROM_taranists_use_the_power
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = ROM_taranists_preserve_country_values }
 		x = 59
 		y = 2
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -5070,12 +5070,12 @@ focus_tree = {
 
 	focus = {
 		id = ROM_blooming_agriculture
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = ROM_taranists_use_the_power }
 		x = 60
 		y = 3
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -5138,12 +5138,12 @@ focus_tree = {
 
 	focus = {
 		id = ROM_taranists_refuse_the_power
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = ROM_taranists_preserve_country_values }
 		x = 63
 		y = 2
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -5188,7 +5188,7 @@ focus_tree = {
 		x = 63
 		y = 3
 
-		cost = 0
+		cost = 0.5
 
 		ai_will_do = {
 			factor = 5
@@ -5259,7 +5259,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_communists_fraud_the_elections
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = ROM_together_we_can_win }
 		x = 63
 		y = 4
@@ -5297,7 +5297,7 @@ focus_tree = {
 
 	focus = {
 		id = ROM_blooming_population
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = ROM_university_reform_law }
 		prerequisite = { focus = ROM_blooming_agriculture }
 		x = 59
@@ -5319,7 +5319,7 @@ focus_tree = {
 
 		focus = {
 		id = ROM_rosia_montana_site
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = ROM_bauxite_extraction_efficiency }
 		x = 55
 		y = 4
