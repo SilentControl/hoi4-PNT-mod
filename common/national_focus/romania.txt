@@ -4661,6 +4661,10 @@ focus_tree = {
 			factor = 5
 		}
 
+		available = {
+			has_government = agrarianism
+		}		
+
 		#available = {
 		#	NOT = { has_war_with = SOV }
 		#	SOV = {
@@ -4702,6 +4706,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 5
+		}
+
+		available = {
+			has_government = agrarianism
 		}
 
 		#available = {
@@ -4748,7 +4756,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_government = agrarianism
+			#has_government = agrarianism
 		}
 
 		bypass = {
@@ -5149,6 +5157,10 @@ focus_tree = {
 			factor = 5
 		}
 
+		available = {
+			has_government = agrarianism
+		}		
+
 		#available = {
 		#	NOT = { has_war_with = SOV }
 		#	SOV = {
@@ -5232,7 +5244,7 @@ focus_tree = {
 			}
 
 			add_popularity = { ideology = fascism popularity = -0.3 }
-			add_popularity = { ideology = communism popularity = 0.6}
+			add_popularity = { ideology = communism popularity = 0.2}
 			#white_peace = SOV
 			SOV = { transfer_state = 78 }
 			SOV = { transfer_state = 80 }
