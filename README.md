@@ -14,6 +14,7 @@ Features
 ========
 
 * semi-ahistorical mod
+* agrarianist ideology
 * țărănist national focus tree
 * țărănist advisors, such as Corneliu Coposu, Ion Mihalache, Virgil Madgearu
 * the historical focus of switching sides during the war (exit the war)
