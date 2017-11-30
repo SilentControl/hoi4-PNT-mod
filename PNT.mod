@@ -1,0 +1,9 @@
+name="PNTmod"
+path="mod/PNTmod/"
+tags={
+	"Balance"
+	"Graphics"
+	"Fixes"
+	"Events"
+}
+supported_version="1.4.*"
