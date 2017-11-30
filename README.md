@@ -29,8 +29,8 @@ Features
 Installation
 ============
 
-* Download the [release][1] and unzip all the files in <mark>Documents/Paradox Interactive/Hearts of Iron IV/mod/PNTmod</mark>.
+* Download the [archive][1] and unzip all the files in <mark>Documents/Paradox Interactive/Hearts of Iron IV/mod/PNTmod</mark>.
 * Move the <mark>PNT.mod</mark> file in <mark>Documents/Paradox Interactive/Hearts of Iron IV/mod</mark>
 * Open HOI4 and tick 'PNTmod'.
 
-[1]: https://github.com/adriandobrica/hoi4-PNT-mod/releases
+[1]: https://github.com/adriandobrica/hoi4-PNT-mod/archive/master.zip
