@@ -4610,7 +4610,7 @@ focus_tree = {
 	####################
 	focus = {
 		id = ROM_taranists_help_the_country
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_agrarianist
 		#prerequisite = { focus = ROM_preserve_greater_romania }
 		x = 57
 		y = 0
